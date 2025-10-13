@@ -1,7 +1,11 @@
  * {
     box-sizing: border-box;
   }
-
+@font-face {
+  font-family: 'PixelDigivolve';
+  src: url('fonts/Pixel Digivolve.otf');
+  font-size: 20px;
+}
   body {
     background-color: #f4d7a4;
     font-family: 'Press Start 2P', cursive;
@@ -52,12 +56,13 @@
   }
 
   .bio {
+    font-family: 'PixelDigivolve', cursive;
     position: absolute;
     top: 80px;
     left: 200px;
     width: 300px;
     font-size: 10px;
-    color: #4b2e05;
+    color: #000000;
     line-height: 1.4;
   }
 

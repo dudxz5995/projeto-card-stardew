@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Press Start 2P', cursive;
+  background: linear-gradient(#2a1051, #eab676);
+  color: #fff;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(white, transparent 70%) repeat;
+  background-size: 2px 2px;
+  animation: twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle {
+  from { opacity: 0.8; }
+  to { opacity: 0.4; }
+}
+
+.mountains {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to top, #3a2a55, transparent);
+}
+
+.clouds {
+  position: absolute;
+  top: 10%;
+  width: 200%;
+  height: 100px;
+  background: url('https://i.imgur.com/8Q7f6WZ.png') repeat-x;
+  background-size: contain;
+  animation: moveClouds 40s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes moveClouds {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.hero {
+  position: relative;
+  z-index: 10;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px #000;
+}
+
+button {
+  background-color: #f4d35e;
+  border: 2px solid #fff;
+  color: #2a1051;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #2a1051;
+  transform: scale(1.05);
+}

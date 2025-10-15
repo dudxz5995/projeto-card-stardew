@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portal da Vila — Menu</title>
+  <link rel="stylesheet" href="tela inicial.css">
+</head>
+<body>
+  <main class="stardew-hero">
+    <div class="sky"></div>
+    <div class="clouds" aria-hidden="true"></div>
+
+    <div class="logo" role="img" aria-label="Título da vila">
+      <img src="tela inicio 2.jpg" alt="Título estilo Stardew">
+    </div>
+
+    <div class="menu">
+      <button id="btn-new" class="menu-btn">NEW</button>
+      <button id="btn-load" class="menu-btn">LOAD</button>
+    </div>
+  </main>
+
+  <div id="videoOverlay" class="overlay hidden" aria-hidden="true">
+    <video id="introVideo" playsinline webkit-playsinline muted>
+      <source src="assets/video/intro.webm" type="video/webm">
+      <source src="assets/video/intro.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo.
+    </video>
+    <div class="overlay-controls">
+      <button id="playSound" class="small-btn">Tocar som</button>
+      <button id="skipBtn" class="small-btn">Pular →</button>
+    </div>
+  </div>
+
+  <script src="tela inicial.js"></script>
+</body>
+</html>

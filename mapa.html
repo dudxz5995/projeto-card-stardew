@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interativo de Stardew Valley</title>
+    <link rel="stylesheet" href="mapa.css">
+</head>
+<body>
+
+    <div class="map-container">
+        <img src="mapa stardew.jpg" alt="Mapa de Stardew Valley" usemap="#stardew-map">
+
+        <div id="clinic-tooltip" class="tooltip">
+            <strong>Clínica do Harvey</strong><br>
+            Onde você vai quando come uma frutinha suspeita.
+        </div>
+        <div id="store-tooltip" class="tooltip">
+            <strong>Armazém do Pierre</strong><br>
+            Compre sementes e converse com os vizinhos.
+        </div>
+        <div id="saloon-tooltip" class="tooltip">
+            <strong>Saloon Fruta Estrelar</strong><br>
+            O ponto de encontro da cidade depois das 17h!
+        </div>
+        </div>
+
+    <map name="stardew-map">
+        <area shape="rect" coords="96,289,207,370" href="#" alt="Clínica" data-tooltip-id="clinic-tooltip">
+
+        <area shape="rect" coords="231,234,360,332" href="#" alt="Armazém Geral" data-tooltip-id="store-tooltip">
+
+        <area shape="rect" coords="234,443,361,540" href="#" alt="Saloon" data-tooltip-id="saloon-tooltip">
+
+        </map>
+
+    <script src="script.js"></script>
+</body>
+</html>

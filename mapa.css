@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4d7a4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.map-container {
+    position: relative; 
+    max-width: 900px; 
+}
+
+.map-container img {
+    width: 100%; 
+    display: block;
+}
+
+
+.tooltip {
+    display: none; 
+    position: absolute; 
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 10; 
+    pointer-events: none; 
+}
+
+.tooltip.active {
+    display: block;
+}

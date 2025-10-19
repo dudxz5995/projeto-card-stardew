@@ -55,14 +55,18 @@
   }
 
   .bio {
-    position: absolute;
-    top: 195px;
-    left: 360px;
-    width: 490px;
-    font-size: 14px;
-    color: #4b2e05;
-    line-height: 1.5;
-  }
+  position: absolute;
+  top: 145px;
+  left: 360px;
+  width: 490px;
+  font-size: 14px;
+  color: #4b2e05;
+  line-height: 1.8;
+}
+   .bio p {
+  margin: 0;
+  padding: 0;
+}
 
   .birthday {
     position: absolute;
@@ -71,3 +75,33 @@
     font-size: 16px;
     color: #7a4220;
   }
+  .buttons {
+  position: absolute;
+  bottom: 20px;
+  right: 80px;
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  background-color: #f2c97d;
+  border: 3px solid #8a542b;
+  border-bottom: 6px solid #5c3419;
+  border-radius: 6px;
+  color: #2e1b0f;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: transform 0.1s ease, filter 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.btn:active {
+  transform: translateY(2px);
+  border-bottom-width: 3px;
+}

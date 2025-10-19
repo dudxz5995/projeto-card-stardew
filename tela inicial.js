@@ -25,14 +25,14 @@ btnNew.addEventListener('click', () => {
 video.addEventListener('ended', () => {
   overlay.style.transition = 'opacity .5s ease';
   overlay.style.opacity = 0;
-  setTimeout(()=> window.location.href = 'card-duda.html', 500);
+  setTimeout(()=> window.location.href = 'mapa.html', 500);
 });
 
 skip.addEventListener('click', () => {
   video.pause();
   overlay.style.transition = 'opacity .3s ease';
   overlay.style.opacity = 0;
-  setTimeout(()=> window.location.href = 'card-duda.html', 300);
+  setTimeout(()=> window.location.href = 'mapa.html', 300);
 });
 
 

@@ -1,15 +1,55 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
-body{font-family: 'Press Start 2P', system-ui, sans-serif;background:linear-gradient(#8db7ff,#f1c99b);color:#fff}
+body{
+  font-family: 'Press Start 2P', system-ui, sans-serif;
+  background:linear-gradient(#8db7ff,#f1c99b);
+  color:#fff}
 
-.stardew-hero{height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden}
-.sky{position:absolute;inset:0;background:linear-gradient(#7ec0ff,#8fb7ff 45%,#e8c0a0 100%)}
-.clouds{position:absolute;top:4%;left:0;width:200%;max-width:100%;height:140px;background-image:url('assets/images/tela inicial.jpg');background-repeat:repeat-x;background-size:contain;opacity:.95;animation:cloudMove 40s linear infinite}
+.stardew-hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  overflow:hidden
+}
+.sky{position:absolute;
+  inset:0;
+  background:linear-gradient(#7ec0ff,#8fb7ff 45%,#e8c0a0 100%)
+}
+.clouds{position:absolute;
+  top:4%;
+  left:0;
+  width:200%;
+  max-width:100%;
+  height:140px;
+  background-image:url('assets/images/tela inicial.jpg');
+  background-repeat:repeat-x;
+  background-size:contain;
+  opacity:.95;
+  animation:cloudMove 40s linear infinite}
 
-.logo{z-index:3;margin-bottom:16px}
-.logo img{width: 1550px;height: 530px;;image-rendering:pixelated;display:block;margin:0 auto}
+.logo{
+  z-index:3;
+  margin-bottom:16px
+}
+.logo img{
+  width: 1550px;
+  height: 530px;
+  image-rendering:pixelated;
+  display:block;
+  margin:0 auto
+}
 
-.menu{z-index:4;display:flex;gap:28px;align-items:center;justify-content:center;margin-top:8px}
+.menu{
+  z-index:4;
+  display:flex;
+  gap:28px;
+  align-items:center;
+  justify-content:center;
+  margin-top:8px
+}
 .menu-btn{
   background:#f0c57a;
   border:6px solid #8a5a2f;

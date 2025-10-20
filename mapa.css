@@ -63,4 +63,108 @@ buttons {
 .btn:active {
   transform: translateY(2px);
   border-bottom-width: 3px;
+}:root{
+  --bg: #f4d7a4;
+  --btn-bg: #f2c97d;
+  --btn-border: #8a542b;
+  --btn-text: #2e1b0f;
 }
+
+*{box-sizing:border-box}
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: var(--bg);
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.page { width: 100%; max-width: 1100px; }
+
+.map-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  background: transparent;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.map-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.pin {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgba(255,255,255,0.9);
+  background: rgba(0,0,0,0.35);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  cursor: pointer;
+  transition: transform 0.12s ease, background 0.12s ease;
+}
+.pin:hover { transform: translate(-50%, -50%) scale(1.25); background: rgba(0,0,0,0.6); }
+
+.tooltip {
+  position: absolute;
+  display: none;
+  pointer-events: none;
+  z-index: 40;
+  max-width: 240px;
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.2;
+  transform: translate(-50%, -110%);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+
+.tooltip::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0.85) transparent transparent transparent;
+}
+
+.tooltip.active { display: block; }
+
+.buttons {
+  position: absolute;
+  bottom: 18px;
+  left: 24px;
+  display: flex;
+  gap: 12px;
+  z-index: 30;
+}
+
+.btn {
+  background-color: var(--btn-bg);
+  border: 3px solid var(--btn-border);
+  border-bottom: 6px solid #5c3419;
+  border-radius: 6px;
+  color: var(--btn-text);
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: transform 0.1s ease, filter 0.2s ease;
+}
+.btn:hover { transform: translateY(-2px); filter: brightness(1.05); }
+.btn:active { transform: translateY(2px); border-bottom-width: 3px; }
